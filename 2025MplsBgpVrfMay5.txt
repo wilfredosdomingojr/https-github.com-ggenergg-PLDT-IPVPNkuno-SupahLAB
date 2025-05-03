@@ -197,6 +197,11 @@ config t
     mpls label protocol ldp
     ! mpls mtu override 1512   (apply only in most real devices)
 	end
+
+
+or using via IGP
+Router ospf 1
+mpls ldp autoconfig
 	
 ***
 
