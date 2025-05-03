@@ -350,22 +350,22 @@ ip vrf clientBSPa
 ***
 R1:pez
 config t
- ip vrf __________
-  __________
-  __________
- ip vrf __________
-  __________
-  __________
- ip vrf __________
-  __________
-  __________
-ip vrf __________
-  __________
-  __________
-ip vrf __________
-  __________
-  __________
-  end
+ ip vrf clientBDOb
+   rd 999:1
+   route-target 64999:1
+ ip vrf clientBPIb
+   rd 999:2
+   route-target 64999:2
+ ip vrf clientPNBb
+   rd 999:3
+   route-target 64999:3 
+ip vrf clientBPOb
+   rd 888:4
+   route-target 69666:4
+ip vrf clientBSPb
+   rd 888:5
+   route-target 69666:5
+   end
   
   
 **********
